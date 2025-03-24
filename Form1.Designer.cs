@@ -242,13 +242,14 @@
             // 
             // Equal
             // 
+            this.Equal.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Equal.Location = new System.Drawing.Point(315, 541);
             this.Equal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Equal.Name = "Equal";
             this.Equal.Size = new System.Drawing.Size(59, 55);
             this.Equal.TabIndex = 17;
             this.Equal.Text = "=";
-            this.Equal.UseVisualStyleBackColor = true;
+            this.Equal.UseVisualStyleBackColor = false;
             this.Equal.Click += new System.EventHandler(this.Equal_Click);
             // 
             // button1
@@ -299,6 +300,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(387, 618);
             this.Controls.Add(this.reciprocal);
             this.Controls.Add(this.squareRoot);
