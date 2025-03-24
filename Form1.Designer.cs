@@ -47,6 +47,9 @@
             this.Clear = new System.Windows.Forms.Button();
             this.Equal = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.square = new System.Windows.Forms.Button();
+            this.squareRoot = new System.Windows.Forms.Button();
+            this.reciprocal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Screen
@@ -217,7 +220,7 @@
             // 
             // Percentage
             // 
-            this.Percentage.Location = new System.Drawing.Point(13, 259);
+            this.Percentage.Location = new System.Drawing.Point(13, 182);
             this.Percentage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Percentage.Name = "Percentage";
             this.Percentage.Size = new System.Drawing.Size(59, 55);
@@ -228,7 +231,7 @@
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(108, 259);
+            this.Clear.Location = new System.Drawing.Point(108, 182);
             this.Clear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(59, 55);
@@ -259,11 +262,47 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
+            // square
+            // 
+            this.square.Location = new System.Drawing.Point(211, 259);
+            this.square.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.square.Name = "square";
+            this.square.Size = new System.Drawing.Size(59, 55);
+            this.square.TabIndex = 19;
+            this.square.Text = "x²";
+            this.square.UseVisualStyleBackColor = true;
+            this.square.Click += new System.EventHandler(this.square_Click);
+            // 
+            // squareRoot
+            // 
+            this.squareRoot.Location = new System.Drawing.Point(108, 259);
+            this.squareRoot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.squareRoot.Name = "squareRoot";
+            this.squareRoot.Size = new System.Drawing.Size(59, 55);
+            this.squareRoot.TabIndex = 20;
+            this.squareRoot.Text = "√x";
+            this.squareRoot.UseVisualStyleBackColor = true;
+            this.squareRoot.Click += new System.EventHandler(this.squareRoot_Click);
+            // 
+            // reciprocal
+            // 
+            this.reciprocal.Location = new System.Drawing.Point(13, 259);
+            this.reciprocal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.reciprocal.Name = "reciprocal";
+            this.reciprocal.Size = new System.Drawing.Size(59, 55);
+            this.reciprocal.TabIndex = 21;
+            this.reciprocal.Text = "1/x";
+            this.reciprocal.UseVisualStyleBackColor = true;
+            this.reciprocal.Click += new System.EventHandler(this.reciprocal_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(387, 618);
+            this.Controls.Add(this.reciprocal);
+            this.Controls.Add(this.squareRoot);
+            this.Controls.Add(this.square);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Equal);
             this.Controls.Add(this.Clear);
@@ -314,6 +353,9 @@
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button Equal;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button square;
+        private System.Windows.Forms.Button squareRoot;
+        private System.Windows.Forms.Button reciprocal;
     }
 }
 

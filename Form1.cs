@@ -131,15 +131,24 @@ namespace MyCalculator
 
         private void Add_Click(object sender, EventArgs e)
         {
-            if (Screen.Text == "") return;
-
+            if (Screen.Text == "")
+            {
+                Screen.Text += "+";
+                isFirst = false;
+                return;
+            }
             opr = '+';
             num1 = float.Parse(Screen.Text);
             Screen.Text = "";
         }
         private void Sum_Click(object sender, EventArgs e)
         {
-            if (Screen.Text == "") return;
+            if (Screen.Text == "")
+            {
+                isFirst = false;
+                Screen.Text += "-";
+                return;
+            }
 
             opr = '-';
             num1 = float.Parse(Screen.Text);
@@ -206,6 +215,40 @@ namespace MyCalculator
                 isFirst = false;
             }
             Screen.Text += ".";
+        }
+        private void square_Click(object sender, EventArgs e)
+        {
+            if (Screen.Text == "") return;
+
+            float num = float.Parse(Screen.Text); 
+            float result = num * num; 
+            Screen.Text = result.ToString(); 
+
+        }
+        private void squareRoot_Click(object sender, EventArgs e)
+        {
+            if (Screen.Text == "") return;
+
+            double num = double.Parse(Screen.Text);
+
+            if(num > 0)
+            {
+                 double result = Math.Sqrt(num);
+                 Screen.Text = result.ToString();
+            }
+            else
+            {
+                Screen.Text = "ERROR";
+            }
+
+        }
+        private void reciprocal_Click(object sender, EventArgs e)
+        {
+            if (Screen.Text == "") return;
+
+            float num = float.Parse(Screen.Text);
+            float result = 1/num;
+            Screen.Text = result.ToString();
         }
     }
 }
